@@ -1,0 +1,32 @@
+:root {
+  --paper: #F7F2E9;
+  --card: #FFFDF8;
+  --ink: #26251F;
+  --ink-soft: #5E5A4E;
+  --jade: #38573B;
+  --line: #E4DACA;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 3rem max(1rem, env(safe-area-inset-left)) 4rem; }
+h1 { margin: 0 0 0.25rem; font-size: 1.9rem; line-height: 1.3; letter-spacing: -0.01em; }
+h2 { margin: 2.25rem 0 0.5rem; font-size: 1.15rem; line-height: 1.4; }
+p, ul { margin: 0 0 0.9rem; }
+ul { padding-left: 1.2rem; }
+li { margin: 0.3rem 0; }
+.meta { color: var(--ink-soft); font-size: 0.9375rem; margin-bottom: 2rem; }
+.box { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.25rem; margin: 0 0 2rem; }
+.box ul { margin: 0; }
+a { color: var(--jade); text-underline-offset: 0.2em; }
+footer { margin-top: 3rem; color: var(--ink-soft); font-size: 0.9375rem; }
